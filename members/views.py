@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def members(request):
-    print(request.GET.get('name'))
+    print(request.GET)
     return HttpResponse("Hello world!")
 
 def member(request,id):
